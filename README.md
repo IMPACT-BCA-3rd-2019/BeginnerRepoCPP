@@ -1,1 +1,6 @@
 # BeginnerRepoCPP
+
+Keep adding which file you uploaded with specified format
+<serial no> : <date> : <work> <Filename> by <username>
+example : 01 : 12/01/2020 : Uploaded HelloWorld.cpp by illogical
+        : 02  : 15/03/2020 : commited HelloWorld.cpp by illogical
