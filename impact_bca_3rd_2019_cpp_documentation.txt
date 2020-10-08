@@ -1,0 +1,25 @@
+This file provides all the list of functions in file impact_bca_3rd_2019_cpp.h
+
+1. swap function
+    Function name :             swap_ptr()
+    Return type :               void / no return
+    Argument/Parameter type :   int*, int*
+                                float*, float*
+                                long*, long*
+                                short*, short*
+                                double*, double*
+       ---------------------------------------------------                         
+2. reverse function
+    Function name :             reverse()
+    Return type :               auto  (int/long/short)
+    Argument type :             int
+                                long
+                                short
+       ---------------------------------------------------                         
+3. isArmstrong function :       
+     Function name :            isArmstrong()
+     Return type :              bool
+     Argument type :            int
+                                long
+                                short
+       ----------------------------------------------------
