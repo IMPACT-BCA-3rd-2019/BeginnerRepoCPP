@@ -136,7 +136,7 @@ using namespace std;
 		// function to check if the given number is armstrong   	added by prerit vishal
 		// this function is overloaded
 		
-		bool isArmstrong(int _number_){
+		bool isArmstrong(int _input_){
 
 			bool _isNegative_ = false;
 
@@ -165,7 +165,7 @@ using namespace std;
 	
 		}
 
-		bool isArmstrong(long _number_){
+		bool isArmstrong(long _input_){
 
 			bool _isNegative_ = false;
 
@@ -193,7 +193,7 @@ using namespace std;
 				return false;
 		}
 
-		bool isArmstrong(short _number_){
+		bool isArmstrong(short _input_){
 			
 			bool _isNegative_ = false;
 
