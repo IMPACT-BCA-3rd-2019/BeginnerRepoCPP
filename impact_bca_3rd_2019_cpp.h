@@ -47,5 +47,89 @@ using namespace std;
 		}
 	#endif
 
+	#ifndef _im_reverse_cpp_
+		#define _im_reverse_cpp_ true
+		// function to get reverse of given number  	added by prerit vishal
+		// this function is overloaded
+
+		auto reverse(int _number_){
+
+			bool _negative_number_ = false;
+
+			if(_number_ == 0)
+				return 0;
+
+			if(_number_ < 0){
+				_number_ = _number_ * -1;
+				_negative_number_ = true;
+			}
+
+			int _reminder_ = 0, _reverse_ = 0;
+
+			while( _number_ > 0 ){
+				_reminder_ = _number_ % 10 ;
+				_reverse_ =	( _reverse_ * 10) + _reminder_ ;
+				_number_ = _number_ / 10 ; 
+			}
+
+			if(_negative_number_)
+				_reverse_ = _reverse_ * -1 ;
+
+			return _reverse_ ;
+		}
+
+		auto reverse(long _number_){
+
+			bool _negative_number_ = false;
+
+			if(_number_ == 0)
+				return 0;
+
+			if(_number_ < 0){
+				_number_ = _number_ * -1;
+				_negative_number_ = true;
+			}
+
+			int _reminder_ = 0, _reverse_ = 0;
+
+			while( _number_ > 0 ){
+				_reminder_ = _number_ % 10 ;
+				_reverse_ =	( _reverse_ * 10) + _reminder_ ;
+				_number_ = _number_ / 10 ; 
+			}
+
+			if(_negative_number_)
+				_reverse_ = _reverse_ * -1 ;
+
+			return _reverse_ ;
+		}
+
+		auto reverse(short _number_){
+
+			bool _negative_number_ = false;
+
+			if(_number_ == 0)
+				return 0;
+
+			if(_number_ < 0){
+				_number_ = _number_ * -1;
+				_negative_number_ = true;
+			}
+
+			int _reminder_ = 0, _reverse_ = 0;
+
+			while( _number_ > 0 ){
+				_reminder_ = _number_ % 10 ;
+				_reverse_ =	( _reverse_ * 10) + _reminder_ ;
+				_number_ = _number_ / 10 ; 
+			}
+
+			if(_negative_number_)
+				_reverse_ = _reverse_ * -1 ;
+
+			return _reverse_ ;
+		}
+	#endif	// _im_reverse_cpp_
+
 //added by preritvishal
 #endif
