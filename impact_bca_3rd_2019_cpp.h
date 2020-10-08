@@ -131,5 +131,94 @@ using namespace std;
 		}
 	#endif	// _im_reverse_cpp_
 
+	#ifndef _im_armstrong_cpp_
+		#define _im_armstrong_cpp_ true
+		
+		bool isArmstrong(int _number_){
+
+			bool _isNegative_ = false;
+
+			if(_input_ == 0)
+				return 0;
+
+			if( _input_ < 0){
+				_isNegative_ = true;
+				_input_ = _input_ * -1;
+			}
+
+			int _temp_input_ = _input_ ;
+			int _reminder_ = 0, _sum_ = 0;
+
+			while( _temp_input_ > 0){
+
+				_reminder_ = _temp_input_ % 10;
+				_sum_ += _reminder_ * _reminder_ * _reminder_ ;
+				_temp_input_ = _temp_input_ / 10;
+			}
+
+			if( _sum_ == _input_ )
+				return true;
+			else 
+				return false;
+	
+		}
+
+		bool isArmstrong(long _number_){
+
+			bool _isNegative_ = false;
+
+			if(_input_ == 0)
+				return 0;
+
+			if( _input_ < 0){
+				_isNegative_ = true;
+				_input_ = _input_ * -1;
+			}
+
+			long _temp_input_ = _input_ ;
+			long _reminder_ = 0, _sum_ = 0;
+
+			while( _temp_input_ > 0){
+
+				_reminder_ = _temp_input_ % 10;
+				_sum_ += _reminder_ * _reminder_ * _reminder_ ;
+				_temp_input_ = _temp_input_ / 10;
+			}
+
+			if( _sum_ == _input_ )
+				return true;
+			else 
+				return false;
+		}
+
+		bool isArmstrong(short _number_){
+			
+			bool _isNegative_ = false;
+
+			if(_input_ == 0)
+				return 0;
+
+			if( _input_ < 0){
+				_isNegative_ = true;
+				_input_ = _input_ * -1;
+			}
+
+			short _temp_input_ = _input_ ;
+			short _reminder_ = 0, _sum_ = 0;
+
+			while( _temp_input_ > 0){
+
+				_reminder_ = _temp_input_ % 10;
+				_sum_ += _reminder_ * _reminder_ * _reminder_ ;
+				_temp_input_ = _temp_input_ / 10;
+			}
+
+			if( _sum_ == _input_ )
+				return true;
+			else 
+				return false;
+		}
+	#endif	// _im_armstrong_cpp_
+
 //added by preritvishal
 #endif
