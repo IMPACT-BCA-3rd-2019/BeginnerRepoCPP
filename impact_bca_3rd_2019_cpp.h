@@ -133,13 +133,15 @@ using namespace std;
 
 	#ifndef _im_armstrong_cpp_
 		#define _im_armstrong_cpp_ true
+		// function to check if the given number is armstrong   	added by prerit vishal
+		// this function is overloaded
 		
 		bool isArmstrong(int _number_){
 
 			bool _isNegative_ = false;
 
-			if(_input_ == 0)
-				return 0;
+			if(_input_ == 0 || _input_ == 1)
+				return true;
 
 			if( _input_ < 0){
 				_isNegative_ = true;
@@ -167,8 +169,8 @@ using namespace std;
 
 			bool _isNegative_ = false;
 
-			if(_input_ == 0)
-				return 0;
+			if(_input_ == 0 || _input_ == 1)
+				return true;
 
 			if( _input_ < 0){
 				_isNegative_ = true;
@@ -195,8 +197,8 @@ using namespace std;
 			
 			bool _isNegative_ = false;
 
-			if(_input_ == 0)
-				return 0;
+			if(_input_ == 0 || _input_ == 1)
+				return true;
 
 			if( _input_ < 0){
 				_isNegative_ = true;
